@@ -14,26 +14,4 @@ jobs:
           mkdir -p 'app'
           echo cGx1Z2lucyB7CiAgICBpZCAnY29tLmFuZHJvaWQuYXBwbGljYXRpb24nCiAgICBpZCAnb3JnLmpldGJyYWlucy5rb3RsaW4uYW5kcm9pZCcKfQphbmRyb2lkIHsKICAgIG5hbWVzcGFjZSAnY29tLnl1bmEuY2h3aWtldCcKICAgIGNvbXBpbGVTZGsgMzQKICAgIGRlZmF1bHRDb25maWcgewogICAgICAgIGFwcGxpY2F0aW9uSWQgJ2NvbS55dW5hLmNod2lrZXQnCiAgICAgICAgbWluU2RrIDI2CiAgICAgICAgdGFyZ2V0U2RrIDM0CiAgICAgICAgdmVyc2lvbkNvZGUgMQogICAgICAgIHZlcnNpb25OYW1lICcwLjEnCiAgICB9CiAgICBjb21waWxlT3B0aW9ucyB7CiAgICAgICAgc291cmNlQ29tcGF0aWJpbGl0eSBKYXZhVmVyc2lvbi5WRVJTSU9OXzE3CiAgICAgICAgdGFyZ2V0Q29tcGF0aWJpbGl0eSBKYXZhVmVyc2lvbi5WRVJTSU9OXzE3CiAgICB9CiAgICBrb3RsaW5PcHRpb25zIHsganZtVGFyZ2V0ID0gJzE3JyB9Cn0KZGVwZW5kZW5jaWVzIHsKICAgIGltcGxlbWVudGF0aW9uICdhbmRyb2lkeC5jb3JlOmNvcmUta3R4OjEuMTMuMScKICAgIGltcGxlbWVudGF0aW9uICdhbmRyb2lkeC5hcHBjb21wYXQ6YXBwY29tcGF0OjEuNy4wJwp9Cg== | base64 -d > 'app/build.gradle'
           mkdir -p 'app/src/main'
-          echo PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPG1hbmlmZXN0IHhtbG5zOmFuZHJvaWQ9Imh0dHA6Ly9zY2hlbWFzLmFuZHJvaWQuY29tL2Fway9yZXMvYW5kcm9pZCI+CiAgICA8YXBwbGljYXRpb24KICAgICAgICBhbmRyb2lkOmxhYmVsPSLst6jsvJPtjIXthYzsiqTtirgiCiAgICAgICAgYW5kcm9pZDp0aGVtZT0iQHN0eWxlL1RoZW1lLkFwcENvbXBhdC5MaWdodC5EYXJrQWN0aW9uQmFyIj4KICAgICAgICA8YWN0aXZpdHkKICAgICAgICAgICAgYW5kcm9pZDpuYW1lPSIuTWFpbkFjdGl2aXR5IgogICAgICAgICAgICBhbmRyb2lkOmV4cG9ydGVkPSJ0cnVlIj4KICAgICAgICAgICAgPGludGVudC1maWx0ZXI+CiAgICAgICAgICAgICAgICA8YWN0aW9uIGFuZHJvaWQ6bmFtZT0iYW5kcm9pZC5pbnRlbnQuYWN0aW9uLk1BSU4iIC8+CiAgICAgICAgICAgICAgICA8Y2F0ZWdvcnkgYW5kcm9pZDpuYW1lPSJhbmRyb2lkLmludGVudC5jYXRlZ29yeS5MQVVOQ0hFUiIgLz4KICAgICAgICAgICAgPC9pbnRlbnQtZmlsdGVyPgogICAgICAgIDwvYWN0aXZpdHk+CiAgICA8L2FwcGxpY2F0aW9uPgo8L21hbmlmZXN0Pgo= | base64 -d > 'app/src/main/AndroidManifest.xml'
-          mkdir -p 'app/src/main/java/com/yuna/chwiket'
-          echo cGFja2FnZSBjb20ueXVuYS5jaHdpa2V0CgppbXBvcnQgYW5kcm9pZC5vcy5CdW5kbGUKaW1wb3J0IGFuZHJvaWQudmlldy5HcmF2aXR5CmltcG9ydCBhbmRyb2lkLndpZGdldC5UZXh0VmlldwppbXBvcnQgYW5kcm9pZHguYXBwY29tcGF0LmFwcC5BcHBDb21wYXRBY3Rpdml0eQoKY2xhc3MgTWFpbkFjdGl2aXR5IDogQXBwQ29tcGF0QWN0aXZpdHkoKSB7CiAgICBvdmVycmlkZSBmdW4gb25DcmVhdGUoc2F2ZWRJbnN0YW5jZVN0YXRlOiBCdW5kbGU/KSB7CiAgICAgICAgc3VwZXIub25DcmVhdGUoc2F2ZWRJbnN0YW5jZVN0YXRlKQogICAgICAgIHZhbCB0diA9IFRleHRWaWV3KHRoaXMpCiAgICAgICAgdHYudGV4dCA9ICLshKTsuZgg7ISx6rO1ISDwn46JXG5cbuu5jOuTnCDthrXroZwg7ZmV7J24IOyZhOujjFxu7J207KCcIOuLpOydjCDri6jqs4TroZwg6rCIIOyImCDsnojslrTsmpQiCiAgICAgICAgdHYudGV4dFNpemUgPSAyMmYKICAgICAgICB0di5ncmF2aXR5ID0gR3Jhdml0eS5DRU5URVIKICAgICAgICB0di5zZXRQYWRkaW5nKDQwLCAxMjAsIDQwLCA0MCkKICAgICAgICBzZXRDb250ZW50Vmlldyh0dikKICAgIH0KfQo= | base64 -d > 'app/src/main/java/com/yuna/chwiket/MainActivity.kt'
-          echo cGx1Z2lucyB7CiAgICBpZCAnY29tLmFuZHJvaWQuYXBwbGljYXRpb24nIHZlcnNpb24gJzguNS4yJyBhcHBseSBmYWxzZQogICAgaWQgJ29yZy5qZXRicmFpbnMua290bGluLmFuZHJvaWQnIHZlcnNpb24gJzEuOS4yNCcgYXBwbHkgZmFsc2UKfQo= | base64 -d > 'build.gradle'
-          echo YW5kcm9pZC51c2VBbmRyb2lkWD10cnVlCm9yZy5ncmFkbGUuanZtYXJncz0tWG14MjA0OG0Ka290bGluLmNvZGUuc3R5bGU9b2ZmaWNpYWwK | base64 -d > 'gradle.properties'
-          echo cGx1Z2luTWFuYWdlbWVudCB7CiAgICByZXBvc2l0b3JpZXMgeyBnb29nbGUoKTsgbWF2ZW5DZW50cmFsKCk7IGdyYWRsZVBsdWdpblBvcnRhbCgpIH0KfQpkZXBlbmRlbmN5UmVzb2x1dGlvbk1hbmFnZW1lbnQgewogICAgcmVwb3NpdG9yaWVzIHsgZ29vZ2xlKCk7IG1hdmVuQ2VudHJhbCgpIH0KfQpyb290UHJvamVjdC5uYW1lID0gImNod2lrZXQiCmluY2x1ZGUgIjphcHAiCg== | base64 -d > 'settings.gradle'
-      - uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: '17'
-      - uses: android-actions/setup-android@v3
-      - name: Install SDK packages
-        run: sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.0"
-      - name: Build APK
-        run: |
-          gradle wrapper --gradle-version 8.7
-          ./gradlew assembleDebug --stacktrace
-      - name: Publish APK to Release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: build-${{ github.run_number }}
-          name: APK build ${{ github.run_number }}
-          files: app/build/outputs/apk/debug/app-debug.apk
+          echo PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPG1hbmlmZXN0IHhtbG5zOmFuZHJvaWQ9Imh0dHA6Ly9zY2hlbWFzLmFuZHJvaWQuY29tL2Fway9yZXMvYW5kcm9pZCI+CiAgICA8YXBwbGljYXRpb24KICAgICAgICBhbmRyb2lkOmxhYmVsPSLst6jsvJPtjIXthYzsiqTtirgiCiAgICAgICAgYW5kcm9pZDp0aGVtZT0iQHN0eWxlL1RoZW1lLkFwcENvbXBhd
