@@ -12,4 +12,80 @@ jobs:
       - name: Recreate project files
         run: |
           mkdir -p 'app'
-          base64 -d -i > 'app/build.gradle'
+          base64 -d -i > 'app/build.gradle' <<'B64'
+          cGx1Z2lucyB7CiAgICBpZCAnY29tLmFuZHJvaWQuYXBwbGljYXRpb24nCiAgICBpZCAnb3JnLmpl
+          dGJyYWlucy5rb3RsaW4uYW5kcm9pZCcKfQphbmRyb2lkIHsKICAgIG5hbWVzcGFjZSAnY29tLnl1
+          bmEuY2h3aWtldCcKICAgIGNvbXBpbGVTZGsgMzQKICAgIGRlZmF1bHRDb25maWcgewogICAgICAg
+          IGFwcGxpY2F0aW9uSWQgJ2NvbS55dW5hLmNod2lrZXQnCiAgICAgICAgbWluU2RrIDI2CiAgICAg
+          ICAgdGFyZ2V0U2RrIDM0CiAgICAgICAgdmVyc2lvbkNvZGUgMQogICAgICAgIHZlcnNpb25OYW1l
+          ICcwLjEnCiAgICB9CiAgICBjb21waWxlT3B0aW9ucyB7CiAgICAgICAgc291cmNlQ29tcGF0aWJp
+          bGl0eSBKYXZhVmVyc2lvbi5WRVJTSU9OXzE3CiAgICAgICAgdGFyZ2V0Q29tcGF0aWJpbGl0eSBK
+          YXZhVmVyc2lvbi5WRVJTSU9OXzE3CiAgICB9CiAgICBrb3RsaW5PcHRpb25zIHsganZtVGFyZ2V0
+          ID0gJzE3JyB9Cn0KZGVwZW5kZW5jaWVzIHsKICAgIGltcGxlbWVudGF0aW9uICdhbmRyb2lkeC5j
+          b3JlOmNvcmUta3R4OjEuMTMuMScKICAgIGltcGxlbWVudGF0aW9uICdhbmRyb2lkeC5hcHBjb21w
+          YXQ6YXBwY29tcGF0OjEuNy4wJwp9Cg==
+          B64
+          mkdir -p 'app/src/main'
+          base64 -d -i > 'app/src/main/AndroidManifest.xml' <<'B64'
+          PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPG1hbmlmZXN0IHhtbG5zOmFu
+          ZHJvaWQ9Imh0dHA6Ly9zY2hlbWFzLmFuZHJvaWQuY29tL2Fway9yZXMvYW5kcm9pZCI+CiAgICA8
+          YXBwbGljYXRpb24KICAgICAgICBhbmRyb2lkOmxhYmVsPSLst6jsvJPtjIXthYzsiqTtirgiCiAg
+          ICAgICAgYW5kcm9pZDp0aGVtZT0iQHN0eWxlL1RoZW1lLkFwcENvbXBhdC5MaWdodC5EYXJrQWN0
+          aW9uQmFyIj4KICAgICAgICA8YWN0aXZpdHkKICAgICAgICAgICAgYW5kcm9pZDpuYW1lPSIuTWFp
+          bkFjdGl2aXR5IgogICAgICAgICAgICBhbmRyb2lkOmV4cG9ydGVkPSJ0cnVlIj4KICAgICAgICAg
+          ICAgPGludGVudC1maWx0ZXI+CiAgICAgICAgICAgICAgICA8YWN0aW9uIGFuZHJvaWQ6bmFtZT0i
+          YW5kcm9pZC5pbnRlbnQuYWN0aW9uLk1BSU4iIC8+CiAgICAgICAgICAgICAgICA8Y2F0ZWdvcnkg
+          YW5kcm9pZDpuYW1lPSJhbmRyb2lkLmludGVudC5jYXRlZ29yeS5MQVVOQ0hFUiIgLz4KICAgICAg
+          ICAgICAgPC9pbnRlbnQtZmlsdGVyPgogICAgICAgIDwvYWN0aXZpdHk+CiAgICA8L2FwcGxpY2F0
+          aW9uPgo8L21hbmlmZXN0Pgo=
+          B64
+          mkdir -p 'app/src/main/java/com/yuna/chwiket'
+          base64 -d -i > 'app/src/main/java/com/yuna/chwiket/MainActivity.kt' <<'B64'
+          cGFja2FnZSBjb20ueXVuYS5jaHdpa2V0CgppbXBvcnQgYW5kcm9pZC5vcy5CdW5kbGUKaW1wb3J0
+          IGFuZHJvaWQudmlldy5HcmF2aXR5CmltcG9ydCBhbmRyb2lkLndpZGdldC5UZXh0VmlldwppbXBv
+          cnQgYW5kcm9pZHguYXBwY29tcGF0LmFwcC5BcHBDb21wYXRBY3Rpdml0eQoKY2xhc3MgTWFpbkFj
+          dGl2aXR5IDogQXBwQ29tcGF0QWN0aXZpdHkoKSB7CiAgICBvdmVycmlkZSBmdW4gb25DcmVhdGUo
+          c2F2ZWRJbnN0YW5jZVN0YXRlOiBCdW5kbGU/KSB7CiAgICAgICAgc3VwZXIub25DcmVhdGUoc2F2
+          ZWRJbnN0YW5jZVN0YXRlKQogICAgICAgIHZhbCB0diA9IFRleHRWaWV3KHRoaXMpCiAgICAgICAg
+          dHYudGV4dCA9ICLshKTsuZgg7ISx6rO1ISDwn46JXG5cbuu5jOuTnCDthrXroZwg7ZmV7J24IOyZ
+          hOujjFxu7J207KCcIOuLpOydjCDri6jqs4TroZwg6rCIIOyImCDsnojslrTsmpQiCiAgICAgICAg
+          dHYudGV4dFNpemUgPSAyMmYKICAgICAgICB0di5ncmF2aXR5ID0gR3Jhdml0eS5DRU5URVIKICAg
+          ICAgICB0di5zZXRQYWRkaW5nKDQwLCAxMjAsIDQwLCA0MCkKICAgICAgICBzZXRDb250ZW50Vmll
+          dyh0dikKICAgIH0KfQo=
+          B64
+          base64 -d -i > 'build.gradle' <<'B64'
+          cGx1Z2lucyB7CiAgICBpZCAnY29tLmFuZHJvaWQuYXBwbGljYXRpb24nIHZlcnNpb24gJzguNS4y
+          JyBhcHBseSBmYWxzZQogICAgaWQgJ29yZy5qZXRicmFpbnMua290bGluLmFuZHJvaWQnIHZlcnNp
+          b24gJzEuOS4yNCcgYXBwbHkgZmFsc2UKfQo=
+          B64
+          base64 -d -i > 'gradle.properties' <<'B64'
+          YW5kcm9pZC51c2VBbmRyb2lkWD10cnVlCm9yZy5ncmFkbGUuanZtYXJncz0tWG14MjA0OG0Ka290
+          bGluLmNvZGUuc3R5bGU9b2ZmaWNpYWwK
+          B64
+          base64 -d -i > 'settings.gradle' <<'B64'
+          cGx1Z2luTWFuYWdlbWVudCB7CiAgICByZXBvc2l0b3JpZXMgeyBnb29nbGUoKTsgbWF2ZW5DZW50
+          cmFsKCk7IGdyYWRsZVBsdWdpblBvcnRhbCgpIH0KfQpkZXBlbmRlbmN5UmVzb2x1dGlvbk1hbmFn
+          ZW1lbnQgewogICAgcmVwb3NpdG9yaWVzIHsgZ29vZ2xlKCk7IG1hdmVuQ2VudHJhbCgpIH0KfQpy
+          b290UHJvamVjdC5uYW1lID0gImNod2lrZXQiCmluY2x1ZGUgIjphcHAiCg==
+          B64
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Ensure Android SDK packages
+        run: |
+          export ANDROID_HOME="${ANDROID_HOME:-/usr/local/lib/android/sdk}"
+          echo "ANDROID_HOME=$ANDROID_HOME" >> $GITHUB_ENV
+          SM="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          yes | "$SM" --licenses >/dev/null 2>&1 || true
+          "$SM" "platforms;android-34" "build-tools;34.0.0" >/dev/null 2>&1 || true
+      - name: Build APK
+        run: |
+          gradle wrapper --gradle-version 8.7
+          ./gradlew assembleDebug --stacktrace
+      - name: Publish APK to Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: build-${{ github.run_number }}
+          name: APK build ${{ github.run_number }}
+          files: app/build/outputs/apk/debug/app-debug.apk
