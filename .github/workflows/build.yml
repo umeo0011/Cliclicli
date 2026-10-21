@@ -12,6 +12,4 @@ jobs:
       - name: Recreate project files
         run: |
           mkdir -p 'app'
-          echo cGx1Z2lucyB7CiAgICBpZCAnY29tLmFuZHJvaWQuYXBwbGljYXRpb24nCiAgICBpZCAnb3JnLmpldGJyYWlucy5rb3RsaW4uYW5kcm9pZCcKfQphbmRyb2lkIHsKICAgIG5hbWVzcGFjZSAnY29tLnl1bmEuY2h3aWtldCcKICAgIGNvbXBpbGVTZGsgMzQKICAgIGRlZmF1bHRDb25maWcgewogICAgICAgIGFwcGxpY2F0aW9uSWQgJ2NvbS55dW5hLmNod2lrZXQnCiAgICAgICAgbWluU2RrIDI2CiAgICAgICAgdGFyZ2V0U2RrIDM0CiAgICAgICAgdmVyc2lvbkNvZGUgMQogICAgICAgIHZlcnNpb25OYW1lICcwLjEnCiAgICB9CiAgICBjb21waWxlT3B0aW9ucyB7CiAgICAgICAgc291cmNlQ29tcGF0aWJpbGl0eSBKYXZhVmVyc2lvbi5WRVJTSU9OXzE3CiAgICAgICAgdGFyZ2V0Q29tcGF0aWJpbGl0eSBKYXZhVmVyc2lvbi5WRVJTSU9OXzE3CiAgICB9CiAgICBrb3RsaW5PcHRpb25zIHsganZtVGFyZ2V0ID0gJzE3JyB9Cn0KZGVwZW5kZW5jaWVzIHsKICAgIGltcGxlbWVudGF0aW9uICdhbmRyb2lkeC5jb3JlOmNvcmUta3R4OjEuMTMuMScKICAgIGltcGxlbWVudGF0aW9uICdhbmRyb2lkeC5hcHBjb21wYXQ6YXBwY29tcGF0OjEuNy4wJwp9Cg== | base64 -d > 'app/build.gradle'
-          mkdir -p 'app/src/main'
-          echo PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPG1hbmlmZXN0IHhtbG5zOmFuZHJvaWQ9Imh0dHA6Ly9zY2hlbWFzLmFuZHJvaWQuY29tL2Fway9yZXMvYW5kcm9pZCI+CiAgICA8YXBwbGljYXRpb24KICAgICAgICBhbmRyb2lkOmxhYmVsPSLst6jsvJPtjIXthYzsiqTtirgiCiAgICAgICAgYW5kcm9pZDp0aGVtZT0iQHN0eWxlL1RoZW1lLkFwcENvbXBhd
+          base64 -d -i > 'app/build.gradle'
